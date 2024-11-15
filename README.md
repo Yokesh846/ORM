@@ -50,9 +50,8 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-![Screenshot 2024-09-01 211854](https://github.com/user-attachments/assets/ccd126ae-3b9a-4a0a-a479-dd468b5691c7)
+![image](https://github.com/user-attachments/assets/e12f5704-3cb6-4cf6-937c-e3d63ef9d52c)
 
-![Screenshot 2024-09-01 211840](https://github.com/user-attachments/assets/9c729a8b-7069-4770-b1af-72e28a5203a1)
 
 
 

@@ -1,4 +1,4 @@
-# Ex02 Django ORM Web Application
+ Ex02 Django ORM Web Application
 ## Date: 4/11/24
 
 ## AIM
@@ -23,34 +23,37 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-```
+ models.py
 
-admin.py 
-
+  
+  from django.db import models
 from django.contrib import admin
-from . models import Employee, EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
-
-models.py
-
-from django.db import models
-from django.contrib import admin 
-class Employee (models.Model):
-    eid=models.CharField(max_length=20,help_text="Employee")
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
+class Bank_loan (models.Model):
+    customer_id=models.IntegerField(primary_key=True)
+    customer_name=models.CharField(max_length=100)
+    loan_amount=models.IntegerField()
+    customer_age=models.IntegerField()
     email=models.EmailField()
 
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
-```
+class Bank_loanAdmin(admin.ModelAdmin):
+    list_display=('customer_id','customer_name','loan_amount','customer_age','email')
 
+
+    
+admin.py
+
+
+ from django.contrib import admin
+from .models import Bank_loan,Bank_loanAdmin
+admin.site.register(Bank_loan,Bank_loanAdmin)
 
 
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/e12f5704-3cb6-4cf6-937c-e3d63ef9d52c)
+![WhatsApp Image 2024-11-16 at 18 49 01_8c577d53](https://github.com/user-attachments/assets/d4fa0196-7843-45cb-94b3-547a59a5c1b2)
+
+![WhatsApp Image 2024-11-16 at 18 48 35_d205938c](https://github.com/user-attachments/assets/1fbdaafd-1e0e-49a4-b9cf-b243808c245f)
+
 
 
 

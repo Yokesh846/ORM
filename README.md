@@ -1,8 +1,12 @@
 # Ex02 Django ORM Web Application
-## Date: 4/11/24
+## Date: 
 
 ## AIM
 To develop a Django application to store and retrieve data from a bank loan database using Object Relational Mapping(ORM).
+
+## ENTITY RELATIONSHIP DIAGRAM
+![WhatsApp Image 2024-11-18 at 10 39 47_ff419d45](https://github.com/user-attachments/assets/3373b3a4-2f6b-4b2b-9e78-286785a47925)
+
 
 ## DESIGN STEPS
 
@@ -19,32 +23,34 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
-```
-
-admin.py 
-
-from django.contrib import admin
-from . models import Employee, EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
-
+~~~
 models.py
 
 from django.db import models
-from django.contrib import admin 
-class Employee (models.Model):
-    eid=models.CharField(max_length=20,help_text="Employee")
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
+from django.contrib import admin
+class Bank_loan (models.Model):
+    customer_id=models.IntegerField(primary_key=True)
+    customer_name=models.CharField(max_length=100)
+    loan_amount=models.IntegerField()
+    customer_age=models.IntegerField()
     email=models.EmailField()
 
-class EmployeeAdmin(admin.ModelAdmin):
-    list_display=('eid','name','salary','age','email')
-```
+class Bank_loanAdmin(admin.ModelAdmin):
+    list_display=('customer_id','customer_name','loan_amount','customer_age','email')
 
+~~~
+    
+admin.py
 
+~~~
+from django.contrib import admin
+from .models import Bank_loan,Bank_loanAdmin
+admin.site.register(Bank_loan,Bank_loanAdmin)
+~~~
 
 ## OUTPUT
+
+![alt text](<FWAD LAB EX2.png>)
 
 
 ## RESULT

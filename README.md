@@ -23,10 +23,10 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 ## PROGRAM
- models.py
+~~~
+models.py
 
-  
-  from django.db import models
+from django.db import models
 from django.contrib import admin
 class Bank_loan (models.Model):
     customer_id=models.IntegerField(primary_key=True)
@@ -38,24 +38,21 @@ class Bank_loan (models.Model):
 class Bank_loanAdmin(admin.ModelAdmin):
     list_display=('customer_id','customer_name','loan_amount','customer_age','email')
 
-
+~~~
     
 admin.py
 
-
- from django.contrib import admin
+~~~
+from django.contrib import admin
 from .models import Bank_loan,Bank_loanAdmin
 admin.site.register(Bank_loan,Bank_loanAdmin)
-
+~~~
 
 ## OUTPUT
 
 ![WhatsApp Image 2024-11-16 at 18 49 01_8c577d53](https://github.com/user-attachments/assets/d4fa0196-7843-45cb-94b3-547a59a5c1b2)
 
 ![WhatsApp Image 2024-11-16 at 18 48 35_d205938c](https://github.com/user-attachments/assets/1fbdaafd-1e0e-49a4-b9cf-b243808c245f)
-
-
-
 
 
 ## RESULT

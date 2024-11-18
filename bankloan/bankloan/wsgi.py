@@ -1,5 +1,5 @@
 """
-WSGI config for yokesh project.
+WSGI config for bankloan project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'yokesh.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'bankloan.settings')
 
 application = get_wsgi_application()

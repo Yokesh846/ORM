@@ -50,9 +50,9 @@ admin.site.register(Bank_loan,Bank_loanAdmin)
 
 ## OUTPUT
 
-![WhatsApp Image 2024-11-16 at 18 49 01_8c577d53](https://github.com/user-attachments/assets/d4fa0196-7843-45cb-94b3-547a59a5c1b2)
+![Screenshot (7)](https://github.com/user-attachments/assets/bb35d9bf-cd6f-4a14-b560-4cb82eedfb91)
+![Screenshot (6)](https://github.com/user-attachments/assets/9d5f7ba6-060a-49b1-8d6f-eaa907ac47fc)
 
-![WhatsApp Image 2024-11-16 at 18 48 35_d205938c](https://github.com/user-attachments/assets/1fbdaafd-1e0e-49a4-b9cf-b243808c245f)
 
 
 ## RESULT
